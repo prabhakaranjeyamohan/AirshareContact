@@ -1,0 +1,17 @@
+.home{
+    display: flex;
+}
+
+.products{
+    width: 33%;
+    margin: 20px;
+}
+
+.productContainer{
+    display: flex;
+    padding: 20px;
+    /* flex-wrap set to wrap so items dont show up in a single line only*/
+    flex-wrap: wrap;
+    /* create space between items */
+    justify-content: space-around;
+}
