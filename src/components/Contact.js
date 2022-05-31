@@ -36,7 +36,7 @@ const Contact = () => {
 
         <form id="contact-form" method="POST" ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" />
+          <input name="name" placeholder="Enter full name..." type="text"  />
           <label htmlFor="email">Email</label>
           <input name="email" placeholder="Enter email..." type="email" />
           <label htmlFor="message">Message</label>

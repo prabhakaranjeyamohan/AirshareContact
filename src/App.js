@@ -8,6 +8,7 @@ import Products from './components/Products'
 import Contact from './components/Contact';
 import Solution from './components/Solution';
 import Breakout from './components/Breakout';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Route path='/contact' exact element={<Contact />} /> 
         <Route path='/cart' exact element={<Cart />} /> 
         <Route path='/products' exact element={<Products />} /> 
-        <Route path='/breakout' exact element={<Breakout />} /> 
+        <Route path='/breakout' exact element={<Breakout />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

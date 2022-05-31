@@ -1,12 +1,17 @@
 .home{
     display: flex;
 }
-
-.products{
-    width: 33%;
-    margin: 20px;
+.heading{
+    text-align: center;
+    border-bottom: solid black;
+    border-width: medium;
 }
 
+.heading2{
+    text-align: center;
+    border: solid black;
+    border-width: medium;
+}
 .productContainer{
     display: flex;
     padding: 20px;
@@ -14,4 +19,6 @@
     flex-wrap: wrap;
     /* create space between items */
     justify-content: space-around;
+    margin: auto;
 }
+

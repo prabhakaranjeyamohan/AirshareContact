@@ -5,7 +5,7 @@ import { AiFillDelete} from 'react-icons/ai';
 import Logo from "../assets/gifs/Logo_100h.gif";
 import { Link } from "react-router-dom";
 import { CartState } from '../Context/Context';
-import '../styles/Header.css'
+import '../styles/Header.css';
 
 const Header = () => {
 
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div> 
-        <Navbar bg="light" variant="light" >
+        <Navbar bg="light" variant="light" className='navbar'>
             <Container>
                 <Navbar.Brand>
                     <Link to='/'><img src ={ Logo } alt='' height="50px"/></Link>

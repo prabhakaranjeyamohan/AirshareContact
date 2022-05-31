@@ -16,7 +16,7 @@ const Breakout = () => {
   return (
     <div className='breakout'>
         <div className= 'leftSide'>
-            <img src = { data.img } alt='' width="100%" height="auto"></img>
+            <img src = { data.breakoutImg } alt='' width="100%" height="auto"></img>
         </div>
 
         <div className= 'rightSide'>
@@ -29,14 +29,14 @@ const Breakout = () => {
                 <p> { data.description } </p>
             </div> 
             <div>
-                <span className = 'border'>
+                <div className = 'border'>
                 <h3 >Key Features</h3>
                 <ul>
                     { data.moreInfo.map(item => (
                         <li>{item}</li>
                     ))}
                 </ul>
-                </span>
+                </div>
             </div> 
             <div className = 'border'>
                 <a href={ priceList } target='_blank' rel='noreferrer'><h5>Price List</h5></a>

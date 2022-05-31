@@ -1,8 +1,12 @@
 import { CartState } from '../Context/Context';
 import { Image, FormControl, ListGroup, Button, Row, Col } from 'react-bootstrap';
 import { AiFillDelete} from 'react-icons/ai';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import {Link} from "react-router-dom";
 import '../styles/Cart.css';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
 
@@ -14,6 +18,23 @@ const Cart = () => {
   useEffect(() =>{
     setTotal(cart.reduce((acc, curr) => acc + Number(curr.price)* curr.qty, 0))
   },[cart])
+
+  //code to send email and display alert on submission of form
+  const form = useRef();
+
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_962iwvu', 'template_tvve5rh', form.current, 'AM0wglsw7C7NzVk5a')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+};
+
+  const notify = () => toast("Your request has been sent!");
+  
 
   return (
     <div className ='home'>
@@ -75,8 +96,14 @@ const Cart = () => {
           <span className='title'>
             Subtotal ({cart.length}) items
           </span>
-          <span style={{ fontWeight: 700, fontSize: 20 }}>Total: $ {total}</span>
-          <Button type="button" disabled={cart.length === 0}> Submit Request </Button>
+          <form id="contact-form" method="POST" ref={form} onSubmit={sendEmail}>
+          <label htmlFor="name">Full Name</label>
+          <input name="name" placeholder="Enter full name..." type="text" />
+          <label htmlFor="email">Email</label>
+          <input name="email" placeholder="Enter email..." type="email" />
+          <button type="submit" disabled={cart.length === 0} onClick={notify}> Submit Request </button>
+          <ToastContainer />
+          </form>
         </div>
       </div>
     </div>

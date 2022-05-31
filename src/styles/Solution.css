@@ -2,9 +2,21 @@ body{
     background-color:#dcdcdc;
 }
 
-video{
-    display: block;
-    margin: 0 auto;
-    height: 50%;
-    width: 50%;
+h2{
+    text-align: center;
 }
+iframe{
+    display: block;
+    margin: auto;
+    border: solid darkcyan;
+}
+
+.videoContainer{
+    padding: 10px;
+}
+.picture{
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+

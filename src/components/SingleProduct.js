@@ -8,6 +8,7 @@ const SingleProduct = ({ prod }) => {
 
   const {state: { cart }, dispatch} = CartState()
 
+  
   return (
     <div className='products'>
         {/*Card component from react bootstrap*/}
@@ -53,3 +54,9 @@ const SingleProduct = ({ prod }) => {
 }
 
 export default SingleProduct
+
+{/*
+  const { state: {products} } = CartState(); 
+
+  const filteredLauncherName = products.filter(prod => prod.type === "Missile").map(filteredprod =>(filteredprod.name))
+  const filteredLauncherDescription = products.filter(prod => prod.type === "Missile").map(filteredprod =>(filteredprod.description)) */}
