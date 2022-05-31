@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div> 
-        <Navbar bg="light" variant="light" className='navbar'>
+        <Navbar bg="light" variant="light" className='navbar' >
             <Container>
                 <Navbar.Brand>
                     <Link to='/'><img src ={ Logo } alt='' height="50px"/></Link>

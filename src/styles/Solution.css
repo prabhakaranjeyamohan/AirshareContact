@@ -19,4 +19,9 @@ iframe{
     margin: auto;
     padding-bottom: 10px;
 }
+@media only screen and (max-width: 800px) {
+    iframe{
+        width: 100%;
+    }
+  }
 
