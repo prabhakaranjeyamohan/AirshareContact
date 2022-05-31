@@ -2,7 +2,6 @@ import { CartState } from '../Context/Context';
 import { Image, FormControl, ListGroup, Button, Row, Col } from 'react-bootstrap';
 import { AiFillDelete} from 'react-icons/ai';
 import { useEffect, useState, useRef } from 'react';
-import {Link} from "react-router-dom";
 import '../styles/Cart.css';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
@@ -38,7 +37,7 @@ const Cart = () => {
 
   return (
     <div className ='home'>
-      <div className ='productContainer'>
+      <div className ='cartContainer'>
         <ListGroup>
           {cart.map((prod) => (
             <ListGroup.Item key={ prod.id }>
@@ -52,7 +51,7 @@ const Cart = () => {
                 </Col>
 
                 <Col md={2}>
-                  <span>$ { prod.price }</span>
+                  <span> {/* filler to create space */} </span>
                 </Col>
 
                 <Col md={2}>
@@ -72,6 +71,7 @@ const Cart = () => {
                     <option>3</option>
                   </FormControl>
                 </Col> 
+                <Col md={2}>{/* filler to create space */}</Col>
 
                 <Col md={2}>
                   <Button type="button" variant="light"

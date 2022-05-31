@@ -15,7 +15,6 @@
     flex-wrap: wrap;
     /* create space between items */
     justify-content: space-around;
-    margin: auto;
 }
 
   @media only screen and (max-width: 1000px) {

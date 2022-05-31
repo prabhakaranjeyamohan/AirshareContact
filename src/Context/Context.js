@@ -24,8 +24,8 @@ const Context = ({ children }) => {
         img: IGLS4,
         breakoutImg: IGLS4,
         description: 'Integrated Ground Launch System, CAPACITY 4',
-        moreInfo: ['Effective against evasive small, medium and large* drones','Multiple countermeasures create a persistent and impenetrable aerial "wall" to prevent swarms and re-attacks','Safe in dense urban environments with civilian operators',
-    'Plug-and-play out of the box; setup in under 30 minutes', 'Single Operator; training in under 15 minutes','Operates standalone or as part of a layered defense system'],
+        moreInfo: ['Universal Ground-based Turret and 4-barrel launcher','Plug-and-play out of the box; setup in under 30 minutes','Simple calibration can be done by single user',
+        'Compatible with:','Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter','Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”','40mm standard munitions (with firing pin / fuze adapter)'],
         type: "Launcher"
     },
     {
@@ -34,8 +34,8 @@ const Context = ({ children }) => {
         img: IGLS9,
         breakoutImg: IGLS9,
         description: 'Integrated Ground Launch System, CAPACITY 9',
-        moreInfo: ['Effective against evasive small, medium and large* drones','Multiple countermeasures create a persistent and impenetrable aerial "wall" to prevent swarms and re-attacks','Safe in dense urban environments with civilian operators',
-        'Plug-and-play out of the box; setup in under 30 minutes', 'Single Operator; training in under 15 minutes','Operates standalone or as part of a layered defense system'],
+        moreInfo: ['Universal Ground-based Turret and 9-barrel launcher','Plug-and-play out of the box; setup in under 30 minutes','Simple calibration can be done by single user',
+        'Compatible with:','Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter','Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”','40mm standard munitions (with firing pin / fuze adapter)'],
         type: "Launcher"
     },
     {
@@ -60,7 +60,7 @@ const Context = ({ children }) => {
     },
     {
         id: 5,
-        name: "IUX0A: Interceptor-UX Block 0A",
+        name: "IUX0A:Interceptor-UX Block 0A",
         img: IUX0AB,
         breakoutImg: IUX0AB,
         description: "Guided, short range missile",
@@ -69,7 +69,7 @@ const Context = ({ children }) => {
     },
     {
         id: 6,
-        name: "IUX0B:  Interceptor-UX Block 0B",
+        name: "IUX0B: Interceptor-UX Block 0B",
         img: IUX0AB,
         breakoutImg: IUX0AB,
         description: "Guided, medium range missile",
@@ -78,7 +78,7 @@ const Context = ({ children }) => {
     },
     {
         id: 7,
-        name: 'IUX0C: Interceptor-UX Block 0C mkII “DART”',
+        name: 'IUX0C:Interceptor-UX Block 0C mkII “DART”',
         img: IUX0CD,
         breakoutImg: IUX0CD,
         description: "Ballistic, short range missile",
