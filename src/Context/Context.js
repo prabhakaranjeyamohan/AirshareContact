@@ -25,7 +25,7 @@ const Context = ({ children }) => {
         breakoutImg: IGLS4,
         description: 'Integrated Ground Launch System, CAPACITY 4',
         moreInfo: ['Universal Ground-based Turret and 4-barrel launcher','Plug-and-play out of the box; setup in under 30 minutes','Simple calibration can be done by single user',
-        'Compatible with: Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter, Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”, 40mm standard munitions (with firing pin / fuze adapter)'],
+        'Compatible with:','Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter','Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”','40mm standard munitions (with firing pin / fuze adapter)'],
         type: "Launcher"
     },
     {
@@ -35,7 +35,7 @@ const Context = ({ children }) => {
         breakoutImg: IGLS9,
         description: 'Integrated Ground Launch System, CAPACITY 9',
         moreInfo: ['Universal Ground-based Turret and 9-barrel launcher','Plug-and-play out of the box; setup in under 30 minutes','Simple calibration can be done by single user',
-        'Compatible with: Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter, Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”, 40mm standard munitions (with firing pin / fuze adapter)'],
+        'Compatible with:','Interceptor-UX missiles Block 0A, 0B, 0CmkI with rail adapter','Intercerptor-UX missiles Block 0C mkII “DART” and Block 0D “SPEAR”','40mm standard munitions (with firing pin / fuze adapter)'],
         type: "Launcher"
     },
     {

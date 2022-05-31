@@ -34,7 +34,7 @@ const Breakout = () => {
                 <h3 >Key Features</h3>
                 <ul>
                     { data.moreInfo.map(item => (
-                        <li>{item}</li>
+                        <li>{item}</li>    
                     ))}
                 </ul>
                 </div>
