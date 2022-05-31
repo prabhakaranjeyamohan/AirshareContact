@@ -12,6 +12,7 @@ const Breakout = () => {
     const location = useLocation()
     const data = location.state
 
+    const hasExtraList = data.hasExtraList;
 
   return (
     <div className='breakout'>
