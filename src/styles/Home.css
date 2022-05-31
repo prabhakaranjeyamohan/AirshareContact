@@ -1,5 +1,5 @@
 .bottom-text  {
-  color: white;
+  color: #DDAE17;
   position: absolute;
   bottom: 8px;
   right: 16px;
@@ -92,7 +92,7 @@
 
   .headerContainer button {
     background-color: white;
-    color: #121619;
+    color: #DDAE17;
     margin-bottom: 30px;
   }
 
