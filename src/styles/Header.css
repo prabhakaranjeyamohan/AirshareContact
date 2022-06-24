@@ -156,4 +156,6 @@ nav {
       color: var(--clr-primary-7);
     }
   }
-  
+  .navButton:hover {
+    border-bottom: 2px solid black;
+  }

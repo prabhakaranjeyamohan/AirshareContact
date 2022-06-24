@@ -1,23 +1,37 @@
 body{
-    background-color:#dcdcdc;
+    background-color:#dcdcdc !important;
 }
 
 h2{
     text-align: center;
 }
-iframe{
+/* iframe{
     display: block;
     margin: auto;
     border: solid darkcyan;
+} */
+.problem, .key-features{
+    background-color: #536872;
+    color: white;
 }
-
-.videoContainer{
-    padding: 10px;
+.key-features li{
+    margin: 20px 0;
 }
+.content{
+    width: 88%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+/* .videoContainer{
+    width:100%;
+    height: 100vh;
+} */
 .picture{
     display: block;
     margin: auto;
     padding-bottom: 10px;
+    width: 600px;
+    height:300px;
 }
 @media only screen and (max-width: 800px) {
     iframe{
@@ -25,3 +39,37 @@ iframe{
     }
   }
 
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+@media screen and (max-width: 500px){
+    .picture{
+    width: 100%;
+    height: auto;
+    }
+}
+p{
+    /* margin-left:15px;
+    margin-right: 15px; */
+    text-align: justify;
+    text-justify: inter-word;
+}
+ul {
+    /* margin-right: 15px; */
+    text-align: justify;
+    text-justify: inter-word;
+}
+.p2{
+    color: white;
+    background-color: #373D3F;
+}

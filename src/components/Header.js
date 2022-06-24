@@ -50,9 +50,9 @@ const Header = () => {
           }
         >
           <ul className="links" ref={linksRef}>
-            <Nav.Link href="/solution">Solution</Nav.Link>
-            <Nav.Link href="/products">Products</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link className = "navButton" href="/solution">SOLUTION</Nav.Link>
+            <Nav.Link className = "navButton" href="/products">PRODUCTS</Nav.Link>
+            <Nav.Link className = "navButton" href="/contact">CONTACT</Nav.Link>
             {/* //search bar 
                 <Navbar.Text className="search">
                     <FormControl style = {{width:500}}
